@@ -7,7 +7,7 @@
  * @returns {Array} nova lista ou a lista original caso inválido
  */
 export function adicionarProduto(lista, nome, quantidade) {
-  if (nome === '' || quantidade === 0) {
+  if (nome === '' || quantidade <= 0) {
     return lista
   }
 
